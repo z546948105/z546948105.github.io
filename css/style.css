@@ -1,0 +1,52 @@
+/* 基础样式 */
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #007acc;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: block;
+  margin: 1rem auto;
+}
+
+.projects ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.projects li {
+  margin-bottom: 0.5rem;
+}
+
+.projects a {
+  text-decoration: none;
+  color: #007acc;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+  margin-top: 2rem;
+}
