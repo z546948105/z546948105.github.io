@@ -119,7 +119,7 @@ function initContactForm() {
     submitBtn.disabled = true;
     submitBtn.style.background = 'linear-gradient(90deg, var(--neon-yellow), var(--neon-green))';
     
-    emailjs.sendForm('service_0n3tkim', 'service_0n3tkim', contactForm)
+    emailjs.sendForm('service_0n3tkim', 'template_qohgw2f', contactForm)
       .then(() => {
         submitBtn.innerHTML = '<i class="fas fa-check"></i><span>TRANSMISSION COMPLETE</span>';
         submitBtn.style.background = 'linear-gradient(90deg, var(--neon-green), #00ff00)';
