@@ -3,40 +3,282 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>我的个人网站</title>
+  <title>蓬蒿人 - 个人主页</title>
+  <meta name="description" content="蓬蒿人的个人技术主页，展示项目成果和技术栈" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <header>
-    <h1>你好，我是张三</h1>
-    <p>前端开发者 | 开源爱好者 | 技术博客作者</p>
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-icon"><i class="fas fa-code"></i></span>
+        <span class="logo-text">蓬蒿人</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#home" class="nav-link">首页</a>
+        <a href="#about" class="nav-link">关于</a>
+        <a href="#skills" class="nav-link">技能</a>
+        <a href="#projects" class="nav-link">项目</a>
+        <a href="#contact" class="nav-link">联系</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
   </header>
 
-  <main>
-    <section class="about">
-      <img src="images/avatar.jpg" alt="我的头像" class="avatar">
-      <p>我热爱编程与设计，擅长使用 HTML/CSS/JavaScript 构建现代网页应用。欢迎阅读我的技术文章或联系我进行合作。</p>
-    </section>
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="avatar-wrapper">
+        <img src="images/avatar.jpg" alt="蓬蒿人" class="hero-avatar" />
+        <div class="avatar-glow"></div>
+      </div>
+      <h1 class="hero-title">你好，我是蓬蒿人</h1>
+      <p class="hero-subtitle">
+        <span class="typewriter"></span>
+        <span class="cursor">|</span>
+      </p>
+      <div class="hero-links">
+        <a href="https://github.com/z546948105" target="_blank" class="social-link" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://gitee.com/zhongwc" target="_blank" class="social-link" aria-label="Gitee">
+          <i class="fab fa-git-alt"></i>
+        </a>
+        <a href="https://www.yuque.com" target="_blank" class="social-link" aria-label="语雀">
+          <i class="fas fa-book"></i>
+        </a>
+      </div>
+      <a href="#about" class="scroll-down">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </div>
+  </section>
 
-    <section class="projects">
-      <h2>我的项目</h2>
-      <ul>
-        <li><a href="#">项目一：个人博客系统</a></li>
-        <li><a href="#">项目二：在线简历生成器</a></li>
-        <li><a href="#">项目三：天气查询工具</a></li>
-      </ul>
-    </section>
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">关于我</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>我是一名热爱编程的开发者，专注于构建优雅的技术解决方案。</p>
+          <p>我相信技术的力量可以改变世界，致力于用代码创造价值。</p>
+          <blockquote class="motto">
+            "一、主敬：整齐严肃，无时不惧。无事时心在腔子里，应事时专一不杂。"<br>
+            "二、静坐：每日不拘何时，静坐四刻，正位凝命，如鼎之镇。"<br>
+            "三、早起：黎明即起，醒后不沾恋。"<br>
+            "四、读书不二：一书未完，不看他书。"
+          </blockquote>
+        </div>
+        <div class="about-stats">
+          <div class="stat-item">
+            <span class="stat-value">5+</span>
+            <span class="stat-label">年开发经验</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">20+</span>
+            <span class="stat-label">完成项目</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">100+</span>
+            <span class="stat-label">GitHub 提交</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section class="contact">
-      <h2>联系方式</h2>
-      <p>Email: zhangsan@example.com</p>
-      <p>GitHub: <a href="https://github.com/zhangsan">github.com/zhangsan</a></p>
-    </section>
-  </main>
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">技术栈</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fab fa-html5"></i></div>
+          <span class="skill-name">HTML5</span>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 95%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+          <span class="skill-name">CSS3</span>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fab fa-js"></i></div>
+          <span class="skill-name">JavaScript</span>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 85%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fab fa-react"></i></div>
+          <span class="skill-name">React</span>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fab fa-vuejs"></i></div>
+          <span class="skill-name">Vue</span>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 75%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+          <span class="skill-name">Node.js</span>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 70%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fab fa-python"></i></div>
+          <span class="skill-name">Python</span>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 65%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fab fa-git"></i></div>
+          <span class="skill-name">Git</span>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 85%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 张三. 保留所有权利.</p>
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">我的项目</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-blog"></i>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">个人博客系统</h3>
+            <p class="project-desc">基于 Node.js 的轻量级博客平台，支持 Markdown 编辑和评论功能。</p>
+            <div class="project-tags">
+              <span class="tag">Node.js</span>
+              <span class="tag">Express</span>
+              <span class="tag">MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-file-alt"></i>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">在线简历生成器</h3>
+            <p class="project-desc">可视化简历编辑工具，支持多种模板和一键导出 PDF。</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Tailwind</span>
+              <span class="tag">PDF.js</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-cloud-sun"></i>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">天气查询工具</h3>
+            <p class="project-desc">实时天气查询应用，支持多城市切换和天气预报。</p>
+            <div class="project-tags">
+              <span class="tag">Vue</span>
+              <span class="tag">OpenWeatherMap</span>
+              <span class="tag">Axios</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-gamepad"></i>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Web 小游戏合集</h3>
+            <p class="project-desc">包含贪吃蛇、俄罗斯方块、拼图等经典小游戏。</p>
+            <div class="project-tags">
+              <span class="tag">Canvas</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">CSS3</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">联系方式</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>zhongwenchao@example.com</span>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <span><a href="https://github.com/z546948105" target="_blank">github.com/z546948105</a></span>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-git-alt"></i>
+            <span><a href="https://gitee.com/zhongwc" target="_blank">gitee.com/zhongwc</a></span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-book"></i>
+            <span><a href="https://www.yuque.com" target="_blank">语雀文档</a></span>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="contactForm">
+            <input type="text" placeholder="您的姓名" required />
+            <input type="email" placeholder="您的邮箱" required />
+            <textarea placeholder="留言内容..." required></textarea>
+            <button type="submit" class="submit-btn">发送留言</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 蓬蒿人. 保留所有权利.</p>
+      <p class="footer-links">
+        <a href="#home">首页</a> |
+        <a href="#about">关于</a> |
+        <a href="#skills">技能</a> |
+        <a href="#projects">项目</a> |
+        <a href="#contact">联系</a>
+      </p>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
