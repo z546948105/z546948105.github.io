@@ -3,87 +3,150 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>蓬蒿人 - 个人主页</title>
-  <meta name="description" content="蓬蒿人的个人技术主页，展示项目成果和技术栈" />
+  <title>蓬蒿人 // CYBERPUNK PORTFOLIO</title>
+  <meta name="description" content="Welcome to the cyberpunk world of 蓬蒿人" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <header class="navbar">
+  <div class="scanline"></div>
+  <div class="grid-bg"></div>
+
+  <nav class="navbar">
     <div class="nav-container">
       <div class="nav-logo">
-        <span class="logo-icon"><i class="fas fa-code"></i></span>
-        <span class="logo-text">蓬蒿人</span>
+        <span class="logo-icon"><i class="fas fa-terminal"></i></span>
+        <span class="logo-text">PENGHAOREN</span>
       </div>
-      <nav class="nav-links">
-        <a href="#home" class="nav-link">首页</a>
-        <a href="#about" class="nav-link">关于</a>
-        <a href="#skills" class="nav-link">技能</a>
-        <a href="#projects" class="nav-link">项目</a>
-        <a href="#contact" class="nav-link">联系</a>
-      </nav>
-      <button class="nav-toggle" id="navToggle">
-        <i class="fas fa-bars"></i>
-      </button>
+      <div class="nav-links">
+        <a href="#home" class="nav-link">_home</a>
+        <a href="#about" class="nav-link">_about</a>
+        <a href="#skills" class="nav-link">_skills</a>
+        <a href="#projects" class="nav-link">_projects</a>
+        <a href="#contact" class="nav-link">_contact</a>
+      </div>
+      <div class="nav-glitch">
+        <span class="glitch-text">SYSTEM ONLINE</span>
+        <span class="glitch-dot"></span>
+      </div>
     </div>
-  </header>
+  </nav>
 
   <section id="home" class="hero">
-    <div class="hero-bg"></div>
     <div class="hero-content">
-      <div class="avatar-wrapper">
-        <img src="images/avatar.jpg" alt="蓬蒿人" class="hero-avatar" />
-        <div class="avatar-glow"></div>
+      <div class="terminal-header">
+        <span class="terminal-dot red"></span>
+        <span class="terminal-dot yellow"></span>
+        <span class="terminal-dot green"></span>
+        <span class="terminal-title">peng-haoren@cyberpunk:~$</span>
       </div>
-      <h1 class="hero-title">你好，我是蓬蒿人</h1>
-      <p class="hero-subtitle">
-        <span class="typewriter"></span>
-        <span class="cursor">|</span>
-      </p>
-      <div class="hero-links">
-        <a href="https://github.com/z546948105" target="_blank" class="social-link" aria-label="GitHub">
+      <div class="terminal-body">
+        <div class="terminal-line">
+          <span class="prompt">></span>
+          <span class="command">whoami</span>
+        </div>
+        <div class="terminal-line output">
+          <span class="text-neon-cyan">蓬蒿人</span>
+          <span class="text-neon-pink">_</span>
+          <span class="text-neon-green">Developer</span>
+        </div>
+        <div class="terminal-line">
+          <span class="prompt">></span>
+          <span class="command">cat /bio/status</span>
+        </div>
+        <div class="terminal-line output glitch-effect">
+          <span class="text-neon-cyan">STATUS:</span>
+          <span class="text-neon-green">ALIVE</span>
+          <span class="text-neon-yellow"> & ONLINE</span>
+        </div>
+      </div>
+      
+      <div class="avatar-container">
+        <div class="avatar-frame">
+          <div class="avatar-border"></div>
+          <img src="images/avatar.jpg" alt="蓬蒿人" class="hero-avatar" />
+          <div class="avatar-corner tl"></div>
+          <div class="avatar-corner tr"></div>
+          <div class="avatar-corner bl"></div>
+          <div class="avatar-corner br"></div>
+        </div>
+        <div class="avatar-glitch-overlay"></div>
+      </div>
+
+      <div class="social-links">
+        <a href="https://github.com/z546948105" target="_blank" class="social-btn">
           <i class="fab fa-github"></i>
+          <span>GITHUB</span>
         </a>
-        <a href="https://gitee.com/zhongwc" target="_blank" class="social-link" aria-label="Gitee">
+        <a href="https://gitee.com/zhongwc" target="_blank" class="social-btn">
           <i class="fab fa-git-alt"></i>
+          <span>GITEE</span>
         </a>
-        <a href="https://www.yuque.com" target="_blank" class="social-link" aria-label="语雀">
+        <a href="https://www.yuque.com" target="_blank" class="social-btn">
           <i class="fas fa-book"></i>
+          <span>YUQUE</span>
         </a>
       </div>
-      <a href="#about" class="scroll-down">
-        <i class="fas fa-chevron-down"></i>
-      </a>
+
+      <div class="scroll-indicator">
+        <span>SCROLL DOWN</span>
+        <div class="scroll-bar">
+          <div class="scroll-progress"></div>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="about" class="about">
     <div class="container">
-      <h2 class="section-title">关于我</h2>
+      <div class="section-header">
+        <span class="section-tag">&lt;about&gt;</span>
+        <h2 class="section-title">关于我</h2>
+        <span class="section-tag">&lt;/about&gt;</span>
+      </div>
+      
       <div class="about-content">
         <div class="about-text">
-          <p>我是一名热爱编程的开发者，专注于构建优雅的技术解决方案。</p>
-          <p>我相信技术的力量可以改变世界，致力于用代码创造价值。</p>
-          <blockquote class="motto">
-            "一、主敬：整齐严肃，无时不惧。无事时心在腔子里，应事时专一不杂。"<br>
-            "二、静坐：每日不拘何时，静坐四刻，正位凝命，如鼎之镇。"<br>
-            "三、早起：黎明即起，醒后不沾恋。"<br>
-            "四、读书不二：一书未完，不看他书。"
-          </blockquote>
+          <div class="typing-effect">
+            <span class="cursor">_</span>
+            <span class="text-neon-pink">我是一名热爱编程的开发者，专注于构建优雅的技术解决方案。</span>
+          </div>
+          <p class="text-neon-cyan">我相信技术的力量可以改变世界，致力于用代码创造价值。</p>
+          
+          <div class="motto-card">
+            <div class="motto-header">
+              <i class="fas fa-terminal"></i>
+              <span>MOTTO.EXE</span>
+            </div>
+            <div class="motto-content">
+              <p><span class="text-neon-green">></span> 主敬：整齐严肃，无时不惧</p>
+              <p><span class="text-neon-green">></span> 静坐：每日不拘何时，静坐四刻</p>
+              <p><span class="text-neon-green">></span> 早起：黎明即起，醒后不沾恋</p>
+              <p><span class="text-neon-green">></span> 读书不二：一书未完，不看他书</p>
+            </div>
+            <div class="motto-footer">
+              <span>PROCESS COMPLETE</span>
+              <span class="progress-bar">||||||||||||||||||||</span>
+            </div>
+          </div>
         </div>
+
         <div class="about-stats">
-          <div class="stat-item">
-            <span class="stat-value">5+</span>
-            <span class="stat-label">年开发经验</span>
+          <div class="stat-card">
+            <div class="stat-number text-neon-cyan">0x05</div>
+            <div class="stat-label">YEARS EXP</div>
           </div>
-          <div class="stat-item">
-            <span class="stat-value">20+</span>
-            <span class="stat-label">完成项目</span>
+          <div class="stat-card">
+            <div class="stat-number text-neon-pink">0x14</div>
+            <div class="stat-label">PROJECTS</div>
           </div>
-          <div class="stat-item">
-            <span class="stat-value">100+</span>
-            <span class="stat-label">GitHub 提交</span>
+          <div class="stat-card">
+            <div class="stat-number text-neon-green">0x64</div>
+            <div class="stat-label">COMMITS</div>
           </div>
         </div>
       </div>
@@ -92,62 +155,99 @@
 
   <section id="skills" class="skills">
     <div class="container">
-      <h2 class="section-title">技术栈</h2>
+      <div class="section-header">
+        <span class="section-tag">&lt;skills&gt;</span>
+        <h2 class="section-title">技术栈</h2>
+        <span class="section-tag">&lt;/skills&gt;</span>
+      </div>
+
       <div class="skills-grid">
-        <div class="skill-card">
-          <div class="skill-icon"><i class="fab fa-html5"></i></div>
+        <div class="skill-card" data-skill="HTML5">
+          <div class="skill-icon-container">
+            <i class="fab fa-html5"></i>
+            <div class="icon-glow"></div>
+          </div>
           <span class="skill-name">HTML5</span>
-          <div class="skill-bar">
-            <div class="skill-progress" style="width: 95%"></div>
+          <div class="skill-meta">
+            <span class="skill-level">95%</span>
+            <span class="skill-tag">CORE</span>
           </div>
         </div>
-        <div class="skill-card">
-          <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+        <div class="skill-card" data-skill="CSS3">
+          <div class="skill-icon-container">
+            <i class="fab fa-css3-alt"></i>
+            <div class="icon-glow"></div>
+          </div>
           <span class="skill-name">CSS3</span>
-          <div class="skill-bar">
-            <div class="skill-progress" style="width: 90%"></div>
+          <div class="skill-meta">
+            <span class="skill-level">90%</span>
+            <span class="skill-tag">CORE</span>
           </div>
         </div>
-        <div class="skill-card">
-          <div class="skill-icon"><i class="fab fa-js"></i></div>
-          <span class="skill-name">JavaScript</span>
-          <div class="skill-bar">
-            <div class="skill-progress" style="width: 85%"></div>
+        <div class="skill-card" data-skill="JavaScript">
+          <div class="skill-icon-container">
+            <i class="fab fa-js"></i>
+            <div class="icon-glow"></div>
+          </div>
+          <span class="skill-name">JAVASCRIPT</span>
+          <div class="skill-meta">
+            <span class="skill-level">85%</span>
+            <span class="skill-tag">CORE</span>
           </div>
         </div>
-        <div class="skill-card">
-          <div class="skill-icon"><i class="fab fa-react"></i></div>
-          <span class="skill-name">React</span>
-          <div class="skill-bar">
-            <div class="skill-progress" style="width: 80%"></div>
+        <div class="skill-card" data-skill="React">
+          <div class="skill-icon-container">
+            <i class="fab fa-react"></i>
+            <div class="icon-glow"></div>
+          </div>
+          <span class="skill-name">REACT</span>
+          <div class="skill-meta">
+            <span class="skill-level">80%</span>
+            <span class="skill-tag">FRAMEWORK</span>
           </div>
         </div>
-        <div class="skill-card">
-          <div class="skill-icon"><i class="fab fa-vuejs"></i></div>
-          <span class="skill-name">Vue</span>
-          <div class="skill-bar">
-            <div class="skill-progress" style="width: 75%"></div>
+        <div class="skill-card" data-skill="Vue">
+          <div class="skill-icon-container">
+            <i class="fab fa-vuejs"></i>
+            <div class="icon-glow"></div>
+          </div>
+          <span class="skill-name">VUE</span>
+          <div class="skill-meta">
+            <span class="skill-level">75%</span>
+            <span class="skill-tag">FRAMEWORK</span>
           </div>
         </div>
-        <div class="skill-card">
-          <div class="skill-icon"><i class="fab fa-node-js"></i></div>
-          <span class="skill-name">Node.js</span>
-          <div class="skill-bar">
-            <div class="skill-progress" style="width: 70%"></div>
+        <div class="skill-card" data-skill="Node.js">
+          <div class="skill-icon-container">
+            <i class="fab fa-node-js"></i>
+            <div class="icon-glow"></div>
+          </div>
+          <span class="skill-name">NODE.JS</span>
+          <div class="skill-meta">
+            <span class="skill-level">70%</span>
+            <span class="skill-tag">BACKEND</span>
           </div>
         </div>
-        <div class="skill-card">
-          <div class="skill-icon"><i class="fab fa-python"></i></div>
-          <span class="skill-name">Python</span>
-          <div class="skill-bar">
-            <div class="skill-progress" style="width: 65%"></div>
+        <div class="skill-card" data-skill="Python">
+          <div class="skill-icon-container">
+            <i class="fab fa-python"></i>
+            <div class="icon-glow"></div>
+          </div>
+          <span class="skill-name">PYTHON</span>
+          <div class="skill-meta">
+            <span class="skill-level">65%</span>
+            <span class="skill-tag">LANGUAGE</span>
           </div>
         </div>
-        <div class="skill-card">
-          <div class="skill-icon"><i class="fab fa-git"></i></div>
-          <span class="skill-name">Git</span>
-          <div class="skill-bar">
-            <div class="skill-progress" style="width: 85%"></div>
+        <div class="skill-card" data-skill="Git">
+          <div class="skill-icon-container">
+            <i class="fab fa-git"></i>
+            <div class="icon-glow"></div>
+          </div>
+          <span class="skill-name">GIT</span>
+          <div class="skill-meta">
+            <span class="skill-level">85%</span>
+            <span class="skill-tag">TOOL</span>
           </div>
         </div>
       </div>
@@ -156,79 +256,95 @@
 
   <section id="projects" class="projects">
     <div class="container">
-      <h2 class="section-title">我的项目</h2>
+      <div class="section-header">
+        <span class="section-tag">&lt;projects&gt;</span>
+        <h2 class="section-title">我的项目</h2>
+        <span class="section-tag">&lt;/projects&gt;</span>
+      </div>
+
       <div class="projects-grid">
         <div class="project-card">
-          <div class="project-image">
-            <i class="fas fa-blog"></i>
-          </div>
-          <div class="project-info">
-            <h3 class="project-title">个人博客系统</h3>
-            <p class="project-desc">基于 Node.js 的轻量级博客平台，支持 Markdown 编辑和评论功能。</p>
-            <div class="project-tags">
-              <span class="tag">Node.js</span>
-              <span class="tag">Express</span>
-              <span class="tag">MongoDB</span>
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-blog"></i>
             </div>
-            <div class="project-links">
-              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-            </div>
+            <span class="project-tag">NODE.JS</span>
           </div>
+          <h3 class="project-title">个人博客系统</h3>
+          <p class="project-desc">基于 Node.js 的轻量级博客平台，支持 Markdown 编辑和评论功能。</p>
+          <div class="project-tech">
+            <span class="tech-chip">Express</span>
+            <span class="tech-chip">MongoDB</span>
+            <span class="tech-chip">EJS</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-btn"><i class="fab fa-github"></i></a>
+            <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <div class="project-glow"></div>
         </div>
+
         <div class="project-card">
-          <div class="project-image">
-            <i class="fas fa-file-alt"></i>
-          </div>
-          <div class="project-info">
-            <h3 class="project-title">在线简历生成器</h3>
-            <p class="project-desc">可视化简历编辑工具，支持多种模板和一键导出 PDF。</p>
-            <div class="project-tags">
-              <span class="tag">React</span>
-              <span class="tag">Tailwind</span>
-              <span class="tag">PDF.js</span>
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-file-alt"></i>
             </div>
-            <div class="project-links">
-              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-            </div>
+            <span class="project-tag">REACT</span>
           </div>
+          <h3 class="project-title">在线简历生成器</h3>
+          <p class="project-desc">可视化简历编辑工具，支持多种模板和一键导出 PDF。</p>
+          <div class="project-tech">
+            <span class="tech-chip">React</span>
+            <span class="tech-chip">Tailwind</span>
+            <span class="tech-chip">PDF.js</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-btn"><i class="fab fa-github"></i></a>
+            <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <div class="project-glow"></div>
         </div>
+
         <div class="project-card">
-          <div class="project-image">
-            <i class="fas fa-cloud-sun"></i>
-          </div>
-          <div class="project-info">
-            <h3 class="project-title">天气查询工具</h3>
-            <p class="project-desc">实时天气查询应用，支持多城市切换和天气预报。</p>
-            <div class="project-tags">
-              <span class="tag">Vue</span>
-              <span class="tag">OpenWeatherMap</span>
-              <span class="tag">Axios</span>
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-cloud-sun"></i>
             </div>
-            <div class="project-links">
-              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-            </div>
+            <span class="project-tag">VUE</span>
           </div>
+          <h3 class="project-title">天气查询工具</h3>
+          <p class="project-desc">实时天气查询应用，支持多城市切换和天气预报。</p>
+          <div class="project-tech">
+            <span class="tech-chip">Vue</span>
+            <span class="tech-chip">OpenWeatherMap</span>
+            <span class="tech-chip">Axios</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-btn"><i class="fab fa-github"></i></a>
+            <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <div class="project-glow"></div>
         </div>
+
         <div class="project-card">
-          <div class="project-image">
-            <i class="fas fa-gamepad"></i>
-          </div>
-          <div class="project-info">
-            <h3 class="project-title">Web 小游戏合集</h3>
-            <p class="project-desc">包含贪吃蛇、俄罗斯方块、拼图等经典小游戏。</p>
-            <div class="project-tags">
-              <span class="tag">Canvas</span>
-              <span class="tag">JavaScript</span>
-              <span class="tag">CSS3</span>
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-gamepad"></i>
             </div>
-            <div class="project-links">
-              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-            </div>
+            <span class="project-tag">CANVAS</span>
           </div>
+          <h3 class="project-title">Web 小游戏合集</h3>
+          <p class="project-desc">包含贪吃蛇、俄罗斯方块、拼图等经典小游戏。</p>
+          <div class="project-tech">
+            <span class="tech-chip">Canvas</span>
+            <span class="tech-chip">JavaScript</span>
+            <span class="tech-chip">CSS3</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-btn"><i class="fab fa-github"></i></a>
+            <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <div class="project-glow"></div>
         </div>
       </div>
     </div>
@@ -236,32 +352,74 @@
 
   <section id="contact" class="contact">
     <div class="container">
-      <h2 class="section-title">联系方式</h2>
+      <div class="section-header">
+        <span class="section-tag">&lt;contact&gt;</span>
+        <h2 class="section-title">联系方式</h2>
+        <span class="section-tag">&lt;/contact&gt;</span>
+      </div>
+
       <div class="contact-content">
         <div class="contact-info">
-          <div class="contact-item">
-            <i class="fas fa-envelope"></i>
-            <span>zhongwenchao@example.com</span>
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="info-text">
+              <span class="info-label">EMAIL</span>
+              <span class="info-value text-neon-cyan">zhongwenchao@example.com</span>
+            </div>
           </div>
-          <div class="contact-item">
-            <i class="fab fa-github"></i>
-            <span><a href="https://github.com/z546948105" target="_blank">github.com/z546948105</a></span>
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="info-text">
+              <span class="info-label">GITHUB</span>
+              <span class="info-value text-neon-cyan">github.com/z546948105</span>
+            </div>
           </div>
-          <div class="contact-item">
-            <i class="fab fa-git-alt"></i>
-            <span><a href="https://gitee.com/zhongwc" target="_blank">gitee.com/zhongwc</a></span>
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fab fa-git-alt"></i>
+            </div>
+            <div class="info-text">
+              <span class="info-label">GITEE</span>
+              <span class="info-value text-neon-cyan">gitee.com/zhongwc</span>
+            </div>
           </div>
-          <div class="contact-item">
-            <i class="fas fa-book"></i>
-            <span><a href="https://www.yuque.com" target="_blank">语雀文档</a></span>
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <div class="info-text">
+              <span class="info-label">YUQUE</span>
+              <span class="info-value text-neon-cyan">yuque.com</span>
+            </div>
           </div>
         </div>
+
         <div class="contact-form">
+          <div class="form-header">
+            <span class="form-title">SEND MESSAGE</span>
+            <span class="form-subtitle">// encrypted transmission</span>
+          </div>
           <form id="contactForm">
-            <input type="text" placeholder="您的姓名" required />
-            <input type="email" placeholder="您的邮箱" required />
-            <textarea placeholder="留言内容..." required></textarea>
-            <button type="submit" class="submit-btn">发送留言</button>
+            <div class="form-group">
+              <label>NAME</label>
+              <input type="text" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+              <label>EMAIL</label>
+              <input type="email" placeholder="Enter your email" required />
+            </div>
+            <div class="form-group">
+              <label>MESSAGE</label>
+              <textarea placeholder="Enter your message" required></textarea>
+            </div>
+            <button type="submit" class="form-btn">
+              <i class="fas fa-paper-plane"></i>
+              <span>SEND</span>
+            </button>
           </form>
         </div>
       </div>
@@ -270,14 +428,23 @@
 
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 蓬蒿人. 保留所有权利.</p>
-      <p class="footer-links">
-        <a href="#home">首页</a> |
-        <a href="#about">关于</a> |
-        <a href="#skills">技能</a> |
-        <a href="#projects">项目</a> |
-        <a href="#contact">联系</a>
-      </p>
+      <div class="footer-content">
+        <div class="footer-left">
+          <span class="footer-title">PENGHAOREN</span>
+          <span class="footer-subtitle">CYBERPUNK PORTFOLIO v2.0</span>
+        </div>
+        <div class="footer-right">
+          <span class="footer-copyright">&copy; 2025 ALL RIGHTS RESERVED</span>
+          <div class="footer-links">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#contact">CONTACT</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-glow"></div>
     </div>
   </footer>
 
