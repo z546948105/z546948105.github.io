@@ -105,7 +105,7 @@ function initScrollAnimations() {
 }
 
 function initContactForm() {
-  emailjs.init('zhongwc');
+  emailjs.init('eygvFJoJa8Hq9P4UN');
   
   const contactForm = document.getElementById('contactForm');
   
